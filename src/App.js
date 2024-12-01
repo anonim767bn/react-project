@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import './Services.css'; // CSS для страницы услуг
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 function MainPage() {
@@ -58,8 +59,64 @@ function MainPage() {
 
 function ServicesPage() {
   return (
-    <div>
-      <h1>Страница услуг компании</h1>
+    <div className="container-fluid">
+      {/* Навигационная панель */}
+      <nav className="navbar navbar-light bg-light d-flex justify-content-between px-4">
+        <div>
+          <Link to="/" className="btn btn-outline-primary">
+            Главная страница
+          </Link>
+          <Link to="/services" className="btn btn-primary">
+            Услуги компании
+          </Link>
+        </div>
+        <div>
+          <button className="btn btn-outline-secondary">ФИО</button>
+          <button className="btn btn-outline-secondary">Вход</button>
+        </div>
+      </nav>
+
+      {/* Основной контент */}
+      <div className="mt-4">
+        <div className="row">
+          <div className="col-md-4">
+            <div className="card bg-primary text-white">
+              <div className="card-body">
+                <h5 className="card-title">Наименование</h5>
+                <p className="card-text">Описание услуги</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card bg-primary text-white card-empty"></div>
+          </div>
+          <div className="col-md-4">
+            <div className="card bg-primary text-white card-empty"></div>
+          </div>
+          <div className="col-md-4">
+            <div className="card bg-primary text-white card-empty"></div>
+          </div>
+          <div className="col-md-4">
+            <div className="card bg-primary text-white card-empty"></div>
+          </div>
+          <div className="col-md-4">
+            <div className="card bg-primary text-white card-empty"></div>
+          </div>
+        </div>
+      </div>
+
+      {/* Нижняя панель */}
+      <footer className="bg-light text-center py-3 mt-4">
+        <div>
+          <Link to="/" className="btn btn-outline-primary">
+            Главная страница
+          </Link>
+          <Link to="/services" className="btn btn-primary">
+            Услуги компании
+          </Link>
+        </div>
+        <p>&copy; 2024 Моя компания</p>
+      </footer>
     </div>
   );
 }
