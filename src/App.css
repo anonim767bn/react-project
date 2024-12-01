@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+
+/* Основной контейнер */
+.container-fluid {
+  padding: 0;
+}
+
+/* Навигационная панель */
+.navbar {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Кнопки навигации */
+.navbar .btn {
+  margin: 0 5px;
+}
+
+/* Карточки */
+.card {
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text small {
+  font-size: 0.9rem;
+}
+
+/* Высота для пустых карточек */
+.card-empty {
+  height: 100px;
+  border: none;
+}
+
+/* Футер */
+footer {
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  margin: 10px 0 0;
+  color: #888;
+}
+
+footer .btn {
+  margin: 5px 10px;
+}
